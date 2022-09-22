@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
+function Section({ title, description, span, leftBtnText, rightBtnText, backgroundImg }) {
     return (
         <Wrap bgImage={backgroundImg}>
             <Fade bottom>
                 <ItemText>
                     <h1>{title}</h1>
-                    <p>{description}</p>
+                    <p>{description} <span>{span}</span></p>
                 </ItemText>
             </Fade>
 
@@ -50,6 +50,17 @@ const Wrap = styled.div`
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
+    p {
+        margin-top: 5px;
+    }
+    span {
+        cursor: pointer;
+        border-bottom: 1px solid #000;
+    }
+
+    span:hover {
+        border-bottom: 2px solid #000;
+    }
 `
 
 const Buttons = styled.div``

@@ -25,7 +25,6 @@ function Header() {
                 <a href='#'>Account</a>
                 <CustomMenu onClick={() => setBurgerStatus(true)} />
             </RightMenu>
-
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper>
                     <CustomClose onClick={() => setBurgerStatus(false)} />
@@ -59,6 +58,10 @@ const Container = styled.div`
     left: 0;
     right: 0;
     z-index: 1;
+
+    img {
+        max-width: 140px;
+    }
 `
 
 const Menu = styled.div`
@@ -69,12 +72,13 @@ const Menu = styled.div`
     flex: 1;
 
     a {
+        font-size: 14px;
         font-weight: 600;
-        padding: 0 10px;
+        padding: 6px 15px;
         flex-wrap: nowrap;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 1200px) {
         display: none;
     }
 `
