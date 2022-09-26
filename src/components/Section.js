@@ -74,17 +74,17 @@ const ButtonGroup = styled.div`
 `
 
 const LeftButton = styled.div`
-    background-color: rgba(23, 26, 32, 0.8);
+    background-color: #23252A;
     height: 40px;
     width: 256px;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
-    opacity: 0.85;
-    text-transform: uppercase;
-    font-size: 12px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
     margin: 8px;
 `
@@ -100,4 +100,6 @@ const DownArrow = styled.img`
     height: 40px;
     animation: animateDown infinite 1.5s;
     overflow-x: hidden;
+    opacity: 0.7;
+    width: 25px;
 `

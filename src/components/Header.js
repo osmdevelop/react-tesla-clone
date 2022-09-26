@@ -74,8 +74,14 @@ const Menu = styled.div`
     a {
         font-size: 14px;
         font-weight: 600;
-        padding: 6px 15px;
+        padding: 7px 15px;
         flex-wrap: nowrap;
+    }
+    
+    a:hover {
+        background-color: #3B3D4110;
+        transition: 0.5s;
+        border-radius: 4px;
     }
 
     @media(max-width: 1200px) {
@@ -88,8 +94,14 @@ const RightMenu = styled.div`
     align-items: center;
     a {
         font-weight: 600;
-        padding: 0 10px;
+        padding: 7px 15px;
         margin-right: 10px;
+    }
+
+    a:hover {
+        background-color: #3B3D4110;
+        transition: 0.5s;
+        border-radius: 4px;
     }
 `
 
@@ -120,21 +132,28 @@ const BurgerNav = styled.div`
     }
 
     li {
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2)
-
+        margin: 4px 0;
+        font-size: 14px;
+        padding: 10px 7px;
+        // border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 4px;
     }
-        a {
-            font-weight: 600;
-            // color: red;
-        }
+    a {
+        font-weight: 600;
+        // color: red;
+    }
+
+    li:hover {
+        background-color: #F2F2F2;
+        transition: 0.25s
+    }
 `
 
 const CloseWrapper = styled.div`
-        display: flex;
-        justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 `
 
 const CustomClose = styled(CloseIcon)`
-    cursor: pointer;  
+    cursor: pointer;
 `
