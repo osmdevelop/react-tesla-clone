@@ -1,31 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
-import Fade from 'react-reveal/Fade';
+import arrow from '../imgs/down-arrow.svg'
 
 function Section({ title, description, span, leftBtnText, rightBtnText, backgroundImg }) {
     return (
         <Wrap bgImage={backgroundImg}>
-            <Fade bottom>
-                <ItemText>
-                    <h1>{title}</h1>
-                    <p>{description} <span>{span}</span></p>
-                </ItemText>
-            </Fade>
+            <ItemText>
+                <h1>{title}</h1>
+                <p>{description} <span>{span}</span></p>
+            </ItemText>
 
             <Buttons>
-                <Fade bottom>
-                    <ButtonGroup>
-                        <LeftButton>
-                            {leftBtnText}
-                        </LeftButton>
-                        {rightBtnText &&
-                            <RightButton>
-                                {rightBtnText}
-                            </RightButton>
-                        }
-                    </ButtonGroup>
-                </Fade>
-                <DownArrow src="../../public/images/down-arrow.svg"></DownArrow>
+                <ButtonGroup>
+                    <LeftButton>
+                        {leftBtnText}
+                    </LeftButton>
+                    {rightBtnText &&
+                        <RightButton>
+                            {rightBtnText}
+                        </RightButton>
+                    }
+                </ButtonGroup>
+                {/* <DownArrow /> */}
             </Buttons>
         </Wrap >
     )
@@ -96,6 +92,7 @@ const RightButton = styled(LeftButton)`
 `
 
 const DownArrow = styled.img`
+    background-image: url(${arrow});
     margin-top: 20px;
     height: 40px;
     animation: animateDown infinite 1.5s;
