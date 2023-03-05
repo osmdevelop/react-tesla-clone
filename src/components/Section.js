@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import arrow from '../imgs/down-arrow.svg'
+// import arrow from '../imgs/down-arrow.svg'
 
 function Section({ title, description, span, leftBtnText, rightBtnText, backgroundImg }) {
     return (
@@ -91,12 +91,12 @@ const RightButton = styled(LeftButton)`
     color: #000;
 `
 
-const DownArrow = styled.img`
-    background-image: url(${arrow});
-    margin-top: 20px;
-    height: 40px;
-    animation: animateDown infinite 1.5s;
-    overflow-x: hidden;
-    opacity: 0.7;
-    width: 25px;
-`
+// const DownArrow = styled.img`
+//     background-image: url(${arrow});
+//     margin-top: 20px;
+//     height: 40px;
+//     animation: animateDown infinite 1.5s;
+//     overflow-x: hidden;
+//     opacity: 0.7;
+//     width: 25px;
+// `
